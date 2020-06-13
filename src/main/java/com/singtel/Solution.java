@@ -1,9 +1,10 @@
 package com.singtel;
 
 
-import com.singtel.bird.Chicken;
-import com.singtel.bird.Duck;
-import com.singtel.bird.Parrot;
+
+import com.singtel.fish.ClownFish;
+import com.singtel.fish.Fish;
+import com.singtel.fish.Sharks;
 
 public class Solution {
 	public static void main(String[] args) {
@@ -12,17 +13,14 @@ public class Solution {
 //		Bird chicken = Bird.ofType(CHICKEN);
 		
 		
-		
-		Parrot pr=new Parrot(false, false, false, false);
-		pr.setSound("WOOFwoof");
-		
-		Chicken chk=new Chicken();
-		
-		chk.fly();
-		chk.sing();
-		Duck dck =new Duck();
-		dck.swim();
-		dck.sing();
+	
+	ClownFish fish=new ClownFish();
+	fish.getColour();
+	fish.getSize();
+	Sharks shks=new Sharks();
+	shks.getColour();
+	shks.getSize();
+	
 		
 		
 		
