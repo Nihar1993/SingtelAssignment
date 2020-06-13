@@ -1,6 +1,8 @@
 package com.singtel;
 
-import com.singtel.bird.Bird;
+
+import com.singtel.bird.Chicken;
+import com.singtel.bird.Duck;
 
 public class Solution {
 	public static void main(String[] args) {
@@ -8,10 +10,18 @@ public class Solution {
 		
 //		Bird chicken = Bird.ofType(CHICKEN);
 		
-		Bird bird = new Bird();
-		bird.fly();
-		bird.walk();
-		bird.sing();
+		
+		
+		Chicken chk=new Chicken();
+		
+		chk.fly();
+		chk.sing();
+		Duck dck =new Duck();
+		dck.swim();
+		dck.sing();
+		
+		
+		
 		
 		
 	}

@@ -1,15 +1,25 @@
-import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.*;
 
 import org.junit.Test;
 
 import com.singtel.bird.Bird;
+import com.singtel.bird.Chicken;
+import com.singtel.bird.Duck;
 
 
 public class SolutionTest {
 	@Test
 	public void testBird(){
-		Bird bird=new Bird();
+    Chicken chk=new Chicken();
 		
-		assertEquals("I am Singing",bird.sing());
+
+		Duck dck =new Duck();
+		
+		assertEquals("Quack,quack",dck.sing());
+		assertEquals("Cluck,Cluck",chk.sing());
+		assertFalse(chk.isAbleToFly());
+		assertFalse(chk.isAbleToSwim());
+		//assertEquals("Cluck,Cluck",dck.s);
+		
 	}
 }
