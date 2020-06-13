@@ -5,6 +5,7 @@ public class Animal {
 	private boolean ableToSing;
 	private boolean ableToWalk;
 	private boolean ableToSwim;
+	private String sound;
 	
 	protected Animal(boolean ableToFly, boolean ableToSing, boolean ableToWalk, boolean ableToSwim) {
 		this.ableToFly = ableToFly;
@@ -44,9 +45,23 @@ public class Animal {
 //	protected void setAbleToSwim(boolean ableToSwim) {
 //		this.ableToSwim = ableToSwim;
 //	}
+	
+	protected void setSound(String sound) {
+		this.sound = sound;
+	}
 
 	public void walk() {
 		System.out.println("I am walking");
 	}
+	
+	public String sing() {
+		if (this.ableToSing) {
+			System.out.println(this.sound);
+			return this.sound;
+		}
+		return "Can not sing";
+	}
+	
+	
 
 }

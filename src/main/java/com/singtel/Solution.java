@@ -3,6 +3,7 @@ package com.singtel;
 
 import com.singtel.bird.Chicken;
 import com.singtel.bird.Duck;
+import com.singtel.bird.Parrot;
 
 public class Solution {
 	public static void main(String[] args) {
@@ -11,6 +12,9 @@ public class Solution {
 //		Bird chicken = Bird.ofType(CHICKEN);
 		
 		
+		
+		Parrot pr=new Parrot(false, false, false, false);
+		pr.setSound("WOOFwoof");
 		
 		Chicken chk=new Chicken();
 		

@@ -6,11 +6,7 @@ public class Chicken extends Bird {
 	
 	public Chicken() {
 		super(false,true,true,false);
-	}
-	
-	public String sing(){
-		System.out.println("Cluck,Cluck");
-		return "Cluck,Cluck";
+		super.setSound("Cluck,Cluck");
 	}
 
 	
